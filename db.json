@@ -1,0 +1,104 @@
+{
+  "productslist": [
+    {
+      "brandname": "Apple",
+      "modelname": "Iphone 11",
+      "date": "2022-07-31T18:30:00.000Z",
+      "condition": "Very-Good",
+      "price": 25000,
+      "comments": "Good Condition Charger Available.",
+      "id": 1
+    },
+    {
+      "brandname": "Samsung",
+      "modelname": "SE",
+      "date": "2022-08-09T18:30:00.000Z",
+      "condition": "New-Like",
+      "price": 20000,
+      "comments": "New Condition.",
+      "id": 2
+    },
+    {
+      "brandname": "Mi",
+      "modelname": "15",
+      "date": "2022-08-31T18:30:00.000Z",
+      "condition": "Good",
+      "price": 10500,
+      "comments": "6 Months Used.",
+      "id": 3
+    },
+    {
+      "brandname": "Motorola",
+      "modelname": "G62",
+      "date": "2022-09-02T18:30:00.000Z",
+      "condition": "New-Like",
+      "price": 18000,
+      "comments": "New Phone.",
+      "id": 4
+    },
+    {
+      "brandname": "Oneplus",
+      "modelname": "10T",
+      "date": "2022-08-22T18:30:00.000Z",
+      "condition": "Very-Good",
+      "price": 45000,
+      "comments": "Little Dent But Good Condition.",
+      "id": 5
+    },
+    {
+      "brandname": "Google",
+      "modelname": "4A",
+      "date": "2020-04-14T18:30:00.000Z",
+      "condition": "Good",
+      "price": 19500,
+      "comments": "1 Year Uesd.",
+      "id": 6
+    },
+    {
+      "brandname": "Realme",
+      "modelname": "Narzo",
+      "date": "2022-09-04T18:30:00.000Z",
+      "condition": "New-Like",
+      "price": 12000,
+      "comments": "New Phone Sealed Box.",
+      "id": 7
+    },
+    {
+      "brandname": "Vivo",
+      "modelname": "T1 5g",
+      "date": "2022-08-30T18:30:00.000Z",
+      "condition": "Very-Good",
+      "price": 16000,
+      "comments": "5g Brand New Condition.",
+      "id": 8
+    },
+    {
+      "brandname": "Oppo",
+      "modelname": "A75",
+      "date": "2022-07-12T18:30:00.000Z",
+      "condition": "Good",
+      "price": 22000,
+      "comments": "3 Months Used",
+      "id": 9
+    },
+    {
+      "brandname": "Nokia",
+      "modelname": "Lumia",
+      "date": "2016-09-13T18:30:00.000Z",
+      "condition": "Good",
+      "price": 5000,
+      "comments": "Old Phone But Good Condition.",
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

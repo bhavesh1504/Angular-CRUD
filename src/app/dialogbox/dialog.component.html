@@ -1,0 +1,48 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Brand Name</mat-label>
+            <mat-select formControlName="brandname" placeholder="Choose Your Brand...">
+            <mat-option value="Apple">Apple</mat-option>
+            <mat-option value="Samsung">Samsung</mat-option>
+            <mat-option value="Oneplus">Oneplus</mat-option>
+            <mat-option value="Mi">Mi</mat-option>
+            <mat-option value="Motorola">Motorola</mat-option>
+            <mat-option value="Vivo">Vivo</mat-option>
+            <mat-option value="Oppo">Oppo</mat-option>
+            <mat-option value="Realme">Realme</mat-option>
+            <mat-option value="Nokia">Nokia</mat-option>
+            <mat-option value="Google">Google</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Model No.</mat-label>
+            <input formControlName="modelname" matInput placeholder="Type Here.." />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>When You Buyed The Product</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <label for=""><h2>Product Condition</h2></label>
+        <mat-radio-group formControlName="condition" class="example-radio-group">
+            <mat-radio-button class="example-radio-button" *ngFor="let quality of productQuality" [value]="quality">
+                {{quality}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearance="outline">
+            <mat-label>₹-Price</mat-label>
+            <input formControlName="price" matInput type="number" placeholder="Enter Price..." />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Comments</mat-label>
+            <textarea formControlName="comments" matInput placeholder="Write Something About Your product..." ></textarea>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" (click)="addProduct()" [disabled]="!productForm.valid">{{actionBtn}}</button>
+</div>
